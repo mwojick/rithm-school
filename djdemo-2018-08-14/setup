@@ -1,0 +1,10 @@
+
+mkdir djdemo
+cd djdemo
+
+virtualenv venv 
+source venv/bin/activate
+
+pip install django
+
+django-admin startproject djdemo
