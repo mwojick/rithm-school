@@ -7,36 +7,35 @@ import NewTodoForm from "./newtodo";
 class App extends Component {
   state = {
     todos: [
-      {
-        title: "first",
-        description: "first todo"
-      },
-      {
-        title: "second",
-        description: "second todo"
-      }
+      // {
+      //   title: "first",
+      //   description: "first todo"
+      // },
+      // {
+      //   title: "second",
+      //   description: "second todo"
+      // }
     ]
   };
 
-  // handleNewTodo = newTodo => {
-  //  this.setState({ todos: [newTodo, ...this.state.todos]} )
-
-  // 	this.setState({ todos: [newTodo, ...this.state.todos]} )
-  // }
+  handleNewTodo = newTodo => {
+    this.setState({ todos: [newTodo, ...this.state.todos] });
+    this.setState({ todos: [newTodo, ...this.state.todos] });
+  };
 
   // using the function form of updater
 
-  handleNewTodo = newTodo => {
-    this.setState(prevState => {
-      // console.log(prevState);
-      return { todos: [newTodo, ...prevState.todos] };
-    });
+  // handleNewTodo = newTodo => {
+  //   this.setState(prevState => {
+  //     // console.log(prevState);
+  //     return { todos: [newTodo, ...prevState.todos] };
+  //   });
 
-    // this.setState( (prevState) => {
-    //   console.log(prevState);
-    // 	return { todos: [newTodo, ...prevState.todos]}
-    // })
-  };
+  //   this.setState(prevState => {
+  //     // console.log(prevState);
+  //     return { todos: [newTodo, ...prevState.todos] };
+  //   });
+  // };
 
   render() {
     // console.log("rendered")
