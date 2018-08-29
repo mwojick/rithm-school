@@ -1,0 +1,19 @@
+.circle_button {
+  align-items: center;
+  background-color: black;
+  border-radius: 50%;
+  border: 5px solid white;
+  color: white;
+  display: flex;
+  height: 250px;
+  justify-content: center;
+  width: 250px;
+}
+
+.circle_button:hover {
+  cursor: pointer;
+}
+
+.circle_button > h1 {
+  user-select: none;
+}
